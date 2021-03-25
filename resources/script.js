@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    nextQuestion();
+    $("#button-start").show();
 });
 
 var countYes = countNo = currentQuestion = 0;
@@ -20,6 +20,13 @@ for (let i = 0; i < nbQuestions; i++) {
         categoriesMax[idCat]++;
     }
 }
+
+$("#button-start").click(function() {
+    console.log("Start Test");
+    $("#start").hide();
+    $("#quiz").show();
+    nextQuestion();
+});
 
 $('#button-yes').click(function() {
     console.log('Click Yes');
