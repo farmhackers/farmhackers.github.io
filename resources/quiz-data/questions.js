@@ -1,10 +1,10 @@
 var questions = new Array(
-    ['As-tu déjà embrassé quelqu’un de l’ieseg ?', 1],
+    ['As-tu déjà embrassé quelqu’un de notre école ?', 1],
     ['As-tu déjà embrassé quelqu’un des Fks ?', 1],
     ['As-tu déjà été impliqué dans une pipounette ?', 1],
     ['As-tu déjà fourcher dans un lieu insolite (cagibi, escalier,...) -> ou les mettre à part ?', 1],
-    ['As-tu déjà fourcher dans les bâtiments de l’IESEG ?', 1],
-    ['As-tu déjà choper plus de 2 personnes lors d’un évènement à l’IESEG ?', 1],
+    ['As-tu déjà fourcher dans les bâtiments de notre école ?', 1],
+    ['As-tu déjà choper plus de 2 personnes lors d’un évènement à notre école ?', 1],
     ['T’es-tu déjà réveillé chez quelqu’un que tu ne connais pas ?', 1],
     ['As-tu déjà chopé ton parrain/marraine/filleul(e) ?', 1],
     ['Et as-tu déjà été impliqué dans une fourche avec elle/lui', 1],
