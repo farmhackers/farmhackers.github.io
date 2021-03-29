@@ -15,7 +15,8 @@ body {
 }
 
 #header img {
-    min-width: 96px;
+    min-width: 70px;
+    padding-top: 20px;
 }
 
 #quiz {
