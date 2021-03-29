@@ -22,27 +22,23 @@ for (let i = 0; i < nbQuestions; i++) {
 }
 
 $("#button-start").click(function() {
-    console.log("Start Test");
     $("#start").hide();
     $("#quiz").show();
     nextQuestion();
 });
 
 $('#button-yes').click(function() {
-    console.log('Click Yes');
     countYes++;
     categoriesRate[questions[currentQuestion-1][1]]++;
     nextQuestion();
 });
 
 $('#button-no').click(function() {
-    console.log('Click No');
     countNo++;
     nextQuestion();
 });
 
 function nextQuestion() {
-    console.log('Next Question');
     currentQuestion++;
     if (currentQuestion > nbQuestions) {
         displayResult();
@@ -54,12 +50,11 @@ function nextQuestion() {
 };
 
 function displayResult() {
-    console.log('Affichage Resultat');
     $('#quiz').hide();
 
     var result = getResult();
 
-    $('#resultats').append('<h1>' + result.title + '</h1><p>' + result.text + '</p>');
+    $('#resultats').append('<h1 class="text-center">' + result.title + '</h1><p class="text-justify fw-bold">' + result.text + '</p>');
 
     for (key in categories) {
         $('#resultats').append('<p>Réponses positives sur ' + categories[key].label + ' <span class="badge bg-warning text-dark">' + Math.round(categoriesRate[key]/categoriesMax[key]*100) + '%</span></p>')

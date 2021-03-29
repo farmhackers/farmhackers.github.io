@@ -1,0 +1,32 @@
+@font-face {
+    font-family: brushia;
+    src: url(font/BRUSHIA.ttf);
+}
+
+body {
+    background-color: #a9d3f4;
+}
+
+#header h1 {
+    font-family: brushia;
+    font-size: 42px;
+    padding-top: 20px;
+    color: #3D3B3C;
+}
+
+#header img {
+    min-width: 96px;
+}
+
+#quiz {
+    margin-top: 20px;
+}
+
+#resultats h1 {
+    font-size: 55px;
+}
+
+#bottom-bar {
+    margin-top: 60px;
+    font-size: 9px;
+}

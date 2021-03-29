@@ -7,22 +7,39 @@
     <link rel="stylesheet" media="screen" type="text/css" href="resources/style.css"/>
 </head>
 <body>
-<h1>Test de Gurketé</h1>
-    <div id="start">
-        <button id="button-start" type="button" class="btn btn-warning" style="display:none;">Commencer le test</button>
-    </div>
-    <div id="quiz" style="display:none;">
-        <div id="question">
-            <p></p>
+<div class="container">
+    <div id="header" class="row justify-content-center">
+        <div class="col-2">
+            <img class="img-fluid" src="resources/img/logobfm.png"></img>
         </div>
-        <button id="button-yes" type="button" class="btn btn-success">OUI</button>
-        <button id="button-no" type="button" class="btn btn-danger">NON</button>
-    </div>
-    
-    <div id="resultats" style="display:none;">
-        <p>Résultats</p>
+        <div class="col-md-6 col-10 align-self-center">
+            <h1 id="head_title" class="text-center">Test de Gurkete</h1>
+        </div>
+        <div class="col-md-2 col-0">
+        </div>
     </div>
 
+    <div class="row justify-content-center">
+        <div class="col-xs-12 text-center" id="start">
+            <button id="button-start" type="button" class="btn btn-warning" style="display:none;">Commencer le test</button>
+        </div>
+
+        <div id="quiz" class="text-center" style="display:none;">
+            <div id="question">
+                <p></p>
+            </div>
+            <button id="button-yes" type="button" class="btn btn-success">OUI</button>
+            <button id="button-no" type="button" class="btn btn-danger">NON</button>
+        </div>
+    
+        <div id="resultats" style="display:none;">
+        </div>
+    </div>
+
+    <div class="row" id="bottom-bar">
+        <div class="col-12 text-center fw-light">Aucune donnée n'est sauvegardée. Code source du quiz disponible sur le <a href="https://github.com/farmhackers/farmhackers.github.io" target="_blank">repo Github</a></div>
+    </div>
+</div>
 </body>
 <script src="resources/jquery-3.6.0.min.js"></script>
 <script src="resources/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
